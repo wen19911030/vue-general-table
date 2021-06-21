@@ -13,4 +13,4 @@ vue-general-table
 <p>支持自定义表头单元格对齐方式</p>
 <p>支持自定义表格内容单元格对齐方式</p>
 
-demo地址：
+demo地址：http://47.102.112.87/vue-general-table/

@@ -1,6 +1,6 @@
 {
   "name": "vue-general-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于 Vue 的多功能表格展示",
   "main": "lib/vgeneraltable.umd.min.js",
   "keyword": "vgeneraltable generaltable general-table basic-table vue-table",
