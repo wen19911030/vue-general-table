@@ -1,0 +1,125 @@
+img {
+  display: inline-block;
+  border-style: none;
+}
+
+html {
+  font-family: "PingFang SC", system-ui, -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, Helvetica, sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.flex {
+  display: flex;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vertical {
+  display: flex;
+  align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+/* 单行文本溢出 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 可访问性隐藏 */
+.clip {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="v-hairline"] {
+  position: relative;
+}
+[class*="v-hairline"]::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: " ";
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border: 0 solid #ebedf0;
+  transform: scale(0.5);
+}
+.v-hairline--top::after {
+  border-top-width: 1px;
+}
+.v-hairline--left::after {
+  border-left-width: 1px;
+}
+.v-hairline--right::after {
+  border-right-width: 1px;
+}
+.v-hairline--bottom::after {
+  border-bottom-width: 1px;
+}
+.v-hairline--top-bottom::after {
+  border-width: 1px 0;
+}
+.v-hairline--surround::after {
+  border-width: 1px;
+}

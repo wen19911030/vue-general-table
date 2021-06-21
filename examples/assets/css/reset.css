@@ -1,0 +1,301 @@
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+  margin: 0;
+  padding: 0;
+}
+
+/* 修正IE 8/9 中未定义的块级元素。 */
+article, aside, footer, header, main, nav, section,/* layout elements 布局元素 */
+details, figcaption, figure, hgroup /* 其它元素 */ {
+  display: block;
+}
+
+/* 修正在 IE 8/9 中未定义的 'inline-block' 元素。 */
+audio, canvas, video /* template elements 替代元素 */ {
+  display: inline-block;
+}
+
+/**
+ * 阻止现在浏览器显示未定义 control 播放控件的 'audio' 声音元素。
+ * 删除 IOS 5 设备中显示的多余的高度。
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*  处理 IE 8/9 中不存在的样式。 */
+[hidden] {
+  display: none;
+}
+summary {
+  display: list-item;
+}
+template {
+  display: none;
+}
+
+/* . 当用户放大或缩小页面时不改变字体大小. */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+  font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+}
+
+/* 重置文本格式元素 */
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  outline: 0;
+}
+a:active,
+a:focus {
+  outline: 0;
+}
+
+/**
+ * 处理多变的 'h1' 字体大小及其在 Firefox 4+, Safari 5, 及 Chrome时浏览器中的 
+ * 'section' 与　'article' 元素中的边距。
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* 处理在 IE 8/9, Safari 5, 及 Chrome 没有的样式。 */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*  处理 Chrome, Edge, 及 Safari 中默认的 'bold' 样式为　'bolder'. */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* 处理在 Safari 5 和 Chrome 没有的样式。 */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * 处理　Firefox　与其它浏览器的差异。
+ * 在edge或IE中overflow可见
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* 处理在 IE 8/9 中没有的样式。 */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* 修正确 Safari 5 和 Chrome 中古怪的默认字体。 */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+/* 为所有浏览器改善预格式化文本的可读性。 */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  white-space: pre-wrap;
+}
+
+/*  设置一致的引用格式。 */
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+/* 处理所有浏览器中字体大小的不一致性 */
+small {
+  font-size: 12px;
+}
+
+/*  阻止所有浏览器中 'sub' 和 'sup' 元素影响 'line-height'.  */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* 删除 IE 8/9 中当内容位于 'a' 中出现的边框。 */
+img {
+  border: 0;
+}
+
+/*  修正 IE 9 中显示古怪的溢出内容。 */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* 处理在 IE 8/9 和 Safari 5 没有的边距。 */
+figure {
+  margin: 0;
+}
+
+/** 重置表单元素 **/
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.75em 0.625em;
+}
+/* 使得表单元素在 ie 下能继承字体大小 */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+button,
+input {
+  line-height: normal;
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+progress {
+  vertical-align: baseline;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/*
+* 1. 避免 Android 4.0.* 中 WebKit 的一个bug, 防止 'audio' 与 'video' 的播放控件失效。
+* 2. 修正 iOS 中不可点击的 'input' 样式。
+* 3. 改善图片类型的 'input' 等光标样式的可用性与一致性。
+*/
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/* 重置不可用元素的默认光标样式。 */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+  * 1. 处理 IE 8/9 中设置为 'content-box' 的盒子模型。
+  * 2. 删除 IE 8/9 中多余的内边距。
+  */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+  * 1. 处理 Safari 5 和 Chrome 中默认设置为 'appearance' 的 'searchfield'.
+  * 2. 处理 Safari 5 和 Chrome 中默认设置为 'box-sizing' 的 'border-box'
+  *    (包括不会过时的 '-moz').
+  */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box;
+  outline-offset: -2px;
+}
+/* 删除 Safari 5 和 OS X 上的 Chrome 中的输入框上的内边距和搜索取消按钮。 */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* 删除 Firefox 4+ button 与 input 上的内边距。*/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* 删除表格里单元格间的间距。 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

@@ -1,24 +1,16 @@
-# vue-general-table
+vue-general-table
 
-## Project setup
-```
-npm install
-```
+这是一个基于vue开发的表格展示组件vue-general-table，它提供以下功能
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<p>支持表头固定</p>
+<p>支持表格左边及右边固定</p>
+<p>支持多级展开</p>
+<p>支持自定义单元格样式</p>
+<p>支持单元格合并</p>
+<p>支持动态显示隐藏某列</p>
+<p>支持表格内容添加过滤器</p>
+<p>支持单元格宽度</p>
+<p>支持自定义表头单元格对齐方式</p>
+<p>支持自定义表格内容单元格对齐方式</p>
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+demo地址：
