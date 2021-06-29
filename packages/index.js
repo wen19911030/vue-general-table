@@ -1,4 +1,3 @@
-// 导入颜色选择器组件
 import generalTable from "./general-table";
 
 // 存储组件列表
